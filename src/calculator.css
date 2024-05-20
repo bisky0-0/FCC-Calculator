@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#calculator{
+    width: 380px;
+    background-color: #001a22;
+    padding: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    border-radius: 15px ;
+    padding-bottom: 30px;
+    box-shadow: -9px 14px 20px #00000080;
+}
+
+
+#screen{
+    width: 100%;
+    height: 100px;
+    background-color: #6d7e97;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+#calc-section{
+    display: flex;
+    flex-flow: row;
+    overflow-x: scroll;
+    text-wrap: nowrap;
+    font-size: 1.4rem;
+    padding: 5px;
+}
+
+
+#calc-section::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px; 
+}
+
+#calc-section::-webkit-scrollbar-thumb {
+    background-color: #ccc; 
+    border-radius: 4px; 
+}
+
+#calc-section::-webkit-scrollbar-track {
+    background-color: transparent; 
+}
+
+#calc-section::-webkit-scrollbar-corner {
+    display: none; 
+}
+
+#calculation{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.1rem;
+}
+
+#top-btns, #middle-btns, #bottom-btns{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+#AC{
+    width: 165px;
+    background-color: #d44e4e;
+}
+
+#nums-btns{
+    display: flex;
+    flex-flow: row wrap;
+    width: 258px;
+    height: fit-content;
+}
+
+#middle-calcs{
+    width: 92px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#nums-btns  .btn{
+    width: calc(240px/3);
+}
+
+#equal{
+    width: 165px;
+    background-color: #b6e7ff;
+    color: #001a22;
+    font-size: 1.7rem;
+}
+
+
+.btn{
+    width: 80px;
+    height: 50px;
+    background-color: #1f2830;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
